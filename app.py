@@ -397,6 +397,18 @@ with st.expander("Dataset Overview", expanded=False):
 # =============================================================================
 # TABS
 # =============================================================================
+
+st.markdown("""
+<style>
+button[data-baseweb="tab"] {
+    margin-right: 20px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    font-weight: 600;
+}
+</style>
+""", unsafe_allow_html=True)
+
 tab1, tab2, tab3, tab4 = st.tabs([
     "  Preprocessing Pipeline  ",
     "  Cluster Analysis  ",
